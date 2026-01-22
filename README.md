@@ -1,1 +1,123 @@
-# Grocery-App
+# Grocery-App dukaandar/
+├── public/
+│   ├── favicon.ico
+│   ├── logo.svg
+│   └── robots.txt
+│
+├── src/
+│   ├── assets/                 # images, icons, fonts, etc.
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── fonts/
+│   │
+│   ├── components/             # reusable UI pieces
+│   │   ├── common/             # truly reusable across app
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── LoadingSpinner.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   └── ...
+│   │   │
+│   │   ├── layout/             # bigger layout blocks
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Sidebar.jsx     (if needed for admin)
+│   │   │   ├── MainLayout.jsx
+│   │   │   └── CustomerLayout.jsx
+│   │   │
+│   │   ├── product/
+│   │   │   ├── ProductCard.jsx
+│   │   │   ├── ProductList.jsx
+│   │   │   ├── ProductImage.jsx
+│   │   │   └── AddToCartButton.jsx
+│   │   │
+│   │   ├── cart/
+│   │   │   ├── CartItem.jsx
+│   │   │   └── CartSummary.jsx
+│   │   │
+│   │   └── checkout/
+│   │       ├── AddressForm.jsx
+│   │       └── PaymentOptions.jsx
+│   │
+│   ├── pages/                  # page-level components (routed)
+│   │   ├── Home.jsx
+│   │   ├── Shop.jsx            (main product listing)
+│   │   ├── ProductDetail.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── OrderSuccess.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   └── NotFound.jsx
+│   │
+│   ├── features/               # Redux + business logic slices (feature-based)
+│   │   ├── auth/
+│   │   │   ├── authSlice.js
+│   │   │   ├── authThunks.js    (login, signup, verify OTP etc)
+│   │   │   └── authSelectors.js (optional)
+│   │   │
+│   │   ├── cart/
+│   │   │   ├── cartSlice.js
+│   │   │   └── cartThunks.js    (add to cart, update qty, clear cart)
+│   │   │
+│   │   ├── products/
+│   │   │   ├── productsSlice.js
+│   │   │   ├── productsThunks.js (fetch products, search, filter)
+│   │   │   └── productsSelectors.js
+│   │   │
+│   │   ├── orders/
+│   │   │   ├── ordersSlice.js
+│   │   │   └── ordersThunks.js
+│   │   │
+│   │   └── address/
+│   │       └── addressSlice.js
+│   │
+│   ├── services/               # API calls (axios / fetch wrappers)
+│   │   ├── api.js              # base axios instance
+│   │   ├── authApi.js
+│   │   ├── productApi.js
+│   │   ├── cartApi.js
+│   │   ├── orderApi.js
+│   │   └── addressApi.js
+│   │
+│   ├── context/                # only if you use React Context (optional)
+│   │
+│   ├── hooks/                  # custom hooks
+│   │   ├── useAuth.jsx
+│   │   ├── useCart.jsx
+│   │   ├── useDebounce.jsx
+│   │   └── useOutsideClick.jsx
+│   │
+│   ├── utils/                  # helpers, formatters, constants
+│   │   ├── constants.js
+│   │   ├── formatCurrency.js
+│   │   ├── formatDate.js
+│   │   ├── calculateDiscount.js
+│   │   └── validateForm.js
+│   │
+│   ├── routes/                 # routing related
+│   │   ├── AppRoutes.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   └── AdminRoute.jsx      (if you have admin panel later)
+│   │
+│   ├── store/
+│   │   └── index.js            # configureStore + all reducers
+│   │
+│   ├── styles/                 # global styles (if not using tailwind)
+│   │   ├── global.css
+│   │   └── variables.css
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css               (or main entry css)
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── vite.config.js
+├── package.json
+├── README.md
+
+abh iske base par sabh cheeza devide karenga
